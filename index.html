@@ -5,10 +5,57 @@ Input 1:<input id="myIn1" type=text value=17><br>
 Input 2:<input id="myIn2" type=text value="Fred"><br>
 
 
-<input type=button value="for(myLoop=0; myLoop <= 5 ; myLoop++){}"  onclick="{
+
+<input type=button value="Input 1 + Input 2"  onclick="{
+
+   document.getElementById('myDiv1').innerHTML = document.getElementById('myIn1').value + document.getElementById('myIn2').value
+
+}"><br>
+
+
+
+<input type=button value="Input 1 + Input 1"  onclick="{
+
+   document.getElementById('myDiv1').innerHTML = document.getElementById('myIn1').value + document.getElementById('myIn2').value
+
+}"><br>
+
+
+<input type=button value="Input 1 + Input 1 using parseInt"  onclick="{
+
+   document.getElementById('myDiv1').innerHTML = parseInt(document.getElementById('myIn1').value) + parseInt(document.getElementById('myIn2').value)
+
+}"><br>
+
+
+
+<input type=button value="Input 1 x Input 1"  onclick="{
+
+   document.getElementById('myDiv1').innerHTML = document.getElementById('myIn1').value * document.getElementById('myIn2').value
+
+}"><br>
+
+
+<input type=button value="Math.random()"  onclick="{
+
+   document.getElementById('myDiv1').innerHTML = Math.random()
+   
+}"><br>
+
+
+
+<input type=button value="Math.round(Math.random()*100)"  onclick="{
+
+   document.getElementById('myDiv1').innerHTML = Math.round(Math.random()*100)
+   
+}"><br>
+
+
+
+<input type=button value="for(myLoop=1; myLoop <= 5 ; myLoop++){}"  onclick="{
 
    myTemp = ''
-   for(myLoop=0; myLoop <= 5; myLoop++){
+   for(myLoop=1; myLoop <= 5; myLoop++){
        myTemp += 'Loop number '+ myLoop + '<br>'
    }
    document.getElementById('myDiv1').innerHTML = myTemp
@@ -18,11 +65,11 @@ Input 2:<input id="myIn2" type=text value="Fred"><br>
 
 
 
-<input type=button value="for using above text fields"  onclick="{
+<input type=button value="for loop using above text fields"  onclick="{
 
    myTemp = 'for loop output = <br> '
-   for(myLoop=0; myLoop <= parseInt(document.getElementById('myIn1').value); myLoop++){
-       myTemp += 'Loop number '+ myLoop + ' ' + document.getElementById('myIn2').value +'<br>'
+   for(myLoop=1; myLoop <= parseInt(document.getElementById('myIn1').value); myLoop++){
+       myTemp += 'Loop number '+ myLoop + ' Input 2 =' + document.getElementById('myIn2').value +'<br>'
    }
    document.getElementById('myDiv1').innerHTML = myTemp
 
@@ -33,9 +80,9 @@ Input 2:<input id="myIn2" type=text value="Fred"><br>
 
 
    if (parseInt(document.getElementById('myIn1').value) <= 27){
-       document.getElementById('myDiv1').innerHTML = 'Text value is less than or equal to 27'
+       document.getElementById('myDiv1').innerHTML = 'Input 1 is less than or equal to 27'
    } else {
-       document.getElementById('myDiv1').innerHTML = 'Text value is greater than 27'
+       document.getElementById('myDiv1').innerHTML = 'Input 1  is greater than 27'
    }
 }"><br>
 
