@@ -16,7 +16,14 @@ Input 2:<input id="myIn2" type=text value="Fred"><br>
 
 <input type=button value="Input 1 + Input 1"  onclick="{
 
-   document.getElementById('myDiv1').innerHTML = document.getElementById('myIn1').value + document.getElementById('myIn2').value
+   document.getElementById('myDiv1').innerHTML =  document.getElementById('myIn1').value + document.getElementById('myIn1').value
+
+}"><br>
+
+
+<input type=button value="Input 1 + Input 1 using docuemnt.all"  onclick="{
+
+   document.getElementById('myDiv1').innerHTML =  document.all.myIn1.value + document.all.myIn1.value
 
 }"><br>
 
@@ -34,6 +41,17 @@ Input 2:<input id="myIn2" type=text value="Fred"><br>
    document.getElementById('myDiv1').innerHTML = document.getElementById('myIn1').value * document.getElementById('myIn2').value
 
 }"><br>
+
+
+
+<input type=button value="Input 1 * Input 1 using docuemnt.all"  onclick="{
+
+   document.getElementById('myDiv1').innerHTML =  document.all.myIn1.value * document.all.myIn1.value
+
+}"><br>
+
+
+
 
 
 <input type=button value="Math.random()"  onclick="{
