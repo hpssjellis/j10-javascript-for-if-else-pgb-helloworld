@@ -6,11 +6,11 @@ Input 2:<input id="myIn2" type=text value="Fred"><br>
 
 
 
-<input type=button value="for(myLoop=0; myLoop <=5; myLoop++){}"  onclick="{
+<input type=button value="for(myLoop=0; myLoop <= ; myLoop++){}"  onclick="{
 
    myTemp = ''
-   for(myLoop=0; myLoop <=5; myLoop++){
-       myTemp += 'Loop number '+ myLoop + '<br>'
+   for(myLoop=0; myLoop <= document.getElementById('myIn1').value; myLoop++){
+       myTemp += 'Loop number '+ myLoop +document.getElementById('myIn2').value '<br>'
    }
    document.getElementById('myDiv1').innerHTML = myTemp
 
@@ -23,4 +23,4 @@ Input 2:<input id="myIn2" type=text value="Fred"><br>
 
 
 
-OUtput <div id="myDiv1"> Output here </div>
+Output <div id="myDiv1"> Output here </div>
