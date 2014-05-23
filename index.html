@@ -18,11 +18,11 @@ Input 2:<input id="myIn2" type=text value="Fred"><br>
 
 
 
-<input type=button value="for using text fields"  onclick="{
+<input type=button value="for using above text fields"  onclick="{
 
    myTemp = 'for loop output = <br> '
    for(myLoop=0; myLoop <= parseInt(document.getElementById('myIn1').value); myLoop++){
-       myTemp += 'Loop number '+ myLoop +document.getElementById('myIn2').value +'<br>'
+       myTemp += 'Loop number '+ myLoop + ' ' + document.getElementById('myIn2').value +'<br>'
    }
    document.getElementById('myDiv1').innerHTML = myTemp
 
