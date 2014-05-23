@@ -20,8 +20,15 @@ Input 2:<input id="myIn2" type=text value="Fred"><br>
 
 }"><br>
 
+<input type=button value="Input 1 + Input 1 using parseInt"  onclick="{
 
-<input type=button value="Input 1 + Input 1 using docuemnt.all"  onclick="{
+   document.getElementById('myDiv1').innerHTML =  parseInt(document.getElementById('myIn1').value) + parseInt(document.getElementById('myIn1').value)
+
+}"><br>
+
+
+
+<input type=button value="Input 1 + Input 1 using document.all"  onclick="{
 
    document.getElementById('myDiv1').innerHTML =  document.all.myIn1.value + document.all.myIn1.value
 
@@ -44,7 +51,7 @@ Input 2:<input id="myIn2" type=text value="Fred"><br>
 
 
 
-<input type=button value="Input 1 * Input 1 using docuemnt.all"  onclick="{
+<input type=button value="Input 1 * Input 1 using document.all"  onclick="{
 
    document.getElementById('myDiv1').innerHTML =  document.all.myIn1.value * document.all.myIn1.value
 
@@ -94,7 +101,7 @@ Input 2:<input id="myIn2" type=text value="Fred"><br>
 }"><br>
 
 
-<input type=button value="if (text >= 27 ){} else {}"  onclick="{
+<input type=button value="if (Input 1 >= 27 ){} else {}"  onclick="{
 
 
    if (parseInt(document.getElementById('myIn1').value) <= 27){
