@@ -20,7 +20,7 @@ Input 2:<input id="myIn2" type=text value="Fred"><br>
 
 <input type=button value="for using text fields"  onclick="{
 
-   myTemp = ''
+   myTemp = 'for loop output = <br> '
    for(myLoop=0; myLoop <= parseInt(document.getElementById('myIn1').value); myLoop++){
        myTemp += 'Loop number '+ myLoop +document.getElementById('myIn2').value +'<br>'
    }
@@ -29,6 +29,15 @@ Input 2:<input id="myIn2" type=text value="Fred"><br>
 }"><br>
 
 
+<input type=button value="if (text >= 27 ){} else {}"  onclick="{
+
+
+   if (parseInt(document.getElementById('myIn1').value) <= 27){
+       document.getElementById('myDiv1').innerHTML = 'Text value is less than or equal to 27'
+   } else {
+       document.getElementById('myDiv1').innerHTML = 'Text value is greater than 27'
+   }
+}"><br>
 
 
 
