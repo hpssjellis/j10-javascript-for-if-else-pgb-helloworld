@@ -27,6 +27,18 @@ Input 2:<input id="myIn2" type=text value="Fred"><br>
 }"><br>
 
 
+<input type=button value="Input 1 * Input 1"  onclick="{
+
+   document.getElementById('myDiv1').innerHTML =  document.getElementById('myIn1').value * document.getElementById('myIn1').value
+
+}"><br>
+
+<input type=button value="Input 1 * Input 1 using parseInt"  onclick="{
+
+   document.getElementById('myDiv1').innerHTML =  parseInt(document.getElementById('myIn1').value) * parseInt(document.getElementById('myIn1').value)
+
+}"><br>
+
 
 <input type=button value="Input 1 + Input 1 using document.all"  onclick="{
 
@@ -35,19 +47,9 @@ Input 2:<input id="myIn2" type=text value="Fred"><br>
 }"><br>
 
 
-<input type=button value="Input 1 + Input 1 using parseInt"  onclick="{
-
-   document.getElementById('myDiv1').innerHTML = parseInt(document.getElementById('myIn1').value) + parseInt(document.getElementById('myIn2').value)
-
-}"><br>
 
 
 
-<input type=button value="Input 1 x Input 1"  onclick="{
-
-   document.getElementById('myDiv1').innerHTML = document.getElementById('myIn1').value * document.getElementById('myIn2').value
-
-}"><br>
 
 
 
